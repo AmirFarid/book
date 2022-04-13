@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+          http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="BookStoreWebsite">
+		<!-- <jta-data-source>java:/DefaultDS</jta-data-source>
+		 <jar-file>../../BookStoreWebsite.jar</jar-file> 
+		<class>com.bookstore.entity.Category</class>
+		<class>com.bookstore.entity.Users</class>
+		<class>com.bookstore.entity.Review</class>
+		<class>com.bookstore.entity.Book</class>
+		<class>com.bookstore.entity.BookOreder</class>
+		<class>com.bookstore.entity.Customer</class>
+		<class>com.bookstore.entity.OrderDetail</class>
+		<class>com.bookstore.entity.OrderDetailId</class> -->
+
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bookstoredb" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,8 @@
+.classpath
+hibernate.properties
+build
+.settings
+target
+WebContent
+test
+.project
